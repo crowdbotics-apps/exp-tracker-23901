@@ -40,8 +40,9 @@ class Blank extends React.Component {
         </View>
       </View>
       <View style={styles.View_11}>
-        <View />
-        <View />
+        <View>
+          <Text style={styles.Text_22}>Mon profile</Text>
+        </View>
       </View>
     </View>
   )
@@ -53,9 +54,18 @@ const styles = StyleSheet.create({
   View_5: { width: 200, height: 50 },
   Image_16: { width: 40, height: 30 },
   Text_20: {},
-  View_11: { flexDirection: "row" },
+  View_11: { width: 200, height: 40, flexDirection: "row" },
   View_12: {},
-  View_13: {}
+  Text_22: {
+    paddingLeft: 100,
+    paddingRight: 160,
+    paddingTop: 7,
+    overflow: "hidden",
+    alignSelf: "center",
+    backgroundColor: "#27409b",
+    fontFamily: "Lato-BoldItalic",
+    textAlign: "center"
+  }
 })
 
 const mapStateToProps = state => {
