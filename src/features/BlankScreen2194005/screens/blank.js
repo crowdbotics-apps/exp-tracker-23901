@@ -44,6 +44,34 @@ class Blank extends React.Component {
           <Text style={styles.Text_22}>Mon profile</Text>
         </View>
       </View>
+      <View style={styles.View_35}>
+        <View style={styles.View_36}>
+          <Image
+            source={{ uri: "https://via.placeholder.com/150" }}
+            style={styles.Image_45}
+          />
+        </View>
+        <View style={styles.View_37}>
+          <Image
+            source={{ uri: "https://via.placeholder.com/150" }}
+            style={styles.Image_48}
+          />
+        </View>
+      </View>
+      <View style={styles.View_41}>
+        <View style={styles.View_42}>
+          <Image
+            source={{ uri: "https://via.placeholder.com/150" }}
+            style={styles.Image_50}
+          />
+        </View>
+        <View style={styles.View_43}>
+          <Image
+            source={{ uri: "https://via.placeholder.com/150" }}
+            style={styles.Image_53}
+          />
+        </View>
+      </View>
     </View>
   )
 }
@@ -73,7 +101,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#27409b",
     fontFamily: "Lato-BoldItalic",
     textAlign: "center"
-  }
+  },
+  View_35: { flexDirection: "row" },
+  View_36: { width: 100, height: 100 },
+  Image_45: { width: 50, height: 50 },
+  View_37: { width: 170, height: 100 },
+  Image_48: { width: 50, height: 500 },
+  View_41: { flexDirection: "row" },
+  View_42: { width: 173, height: 100 },
+  Image_50: { width: 50, height: 50 },
+  View_43: { width: 96, height: 100 },
+  Image_53: { width: 50, height: 50 }
 })
 
 const mapStateToProps = state => {
