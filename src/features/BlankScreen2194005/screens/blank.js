@@ -91,6 +91,7 @@ class Blank extends React.Component {
           <Text>Scanner une facture</Text>
         </View>
       </View>
+      <Button title="Quitt\xE9" onPress={() => alert("Pressed!")} />
     </View>
   )
 }
@@ -134,7 +135,8 @@ const styles = StyleSheet.create({
   Text_115: {},
   View_43: { width: 170, height: 100 },
   Image_53: { width: 50, height: 50 },
-  Text_134: {}
+  Text_134: {},
+  Button_140: {}
 })
 
 const mapStateToProps = state => {
