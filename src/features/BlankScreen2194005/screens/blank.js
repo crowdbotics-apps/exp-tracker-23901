@@ -36,7 +36,7 @@ class Blank extends React.Component {
             source={{ uri: "https://via.placeholder.com/150" }}
             style={styles.Image_16}
           />
-          <Text>Hi Mr X</Text>
+          <Text style={styles.Text_20}>Hi Mr X</Text>
         </View>
       </View>
       <View style={styles.View_11}>
@@ -51,9 +51,17 @@ class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   View_4: { flexDirection: "row" },
-  View_5: { width: 200, height: 50 },
+  View_5: { width: 260, height: 50 },
   Image_16: { width: 40, height: 30 },
-  Text_20: {},
+  Text_20: {
+    fontSize: 15,
+    backgroundColor: "#1d95c9",
+    fontFamily: "Lato-BoldItalic",
+    textAlign: "center",
+    textAlignVertical: "bottom",
+    lineHeight: 31,
+    letterSpacing: 1
+  },
   View_11: { width: 200, height: 40, flexDirection: "row" },
   View_12: {},
   Text_22: {
