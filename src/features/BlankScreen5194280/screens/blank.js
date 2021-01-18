@@ -30,12 +30,23 @@ class Blank extends React.Component {
 
   render = () => (
     <View>
-      <View style={styles.View_3} />
+      <View style={styles.View_3}>
+        <View style={styles.View_8}>
+          <View style={styles.View_9} />
+          <View style={styles.View_10} />
+        </View>
+      </View>
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, View_3: { width: 300 } })
+const styles = StyleSheet.create({
+  View_1: {},
+  View_3: { width: 300 },
+  View_8: { flexDirection: "row" },
+  View_9: { width: 100, height: 50 },
+  View_10: { width: 100, height: 50 }
+})
 const mapStateToProps = state => {
   return {}
 }
