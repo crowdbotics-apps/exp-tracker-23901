@@ -26,7 +26,7 @@ class Blank extends React.Component {
       TextInput_14: "Modifier une d\xE9pense",
       TextInput_16: "Choisir une d\xE9pense",
       TextInput_20: "",
-      DateTimePicker_22: new Date("01/18/2021"),
+      DateTimePicker_22: new Date(""),
       TextInput_24: "",
       TextInput_27: "",
       TextInput_29: ""
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     paddingRight: 6,
     paddingTop: 6,
     paddingBottom: 12,
-    backgroundColor: "#0b64b1",
+    backgroundColor: "#3b97e8",
     fontFamily: "Lato-BoldItalic"
   },
   TextInput_16: {
