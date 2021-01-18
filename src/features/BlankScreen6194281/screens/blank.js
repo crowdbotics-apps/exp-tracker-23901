@@ -21,9 +21,12 @@ import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 class Blank extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       TextInput_22: "Voir mes d\xE9pense",
-      DateTimePicker_35: new Date("")
+      DateTimePicker_35: new Date(""),
+      TextInput_64: "",
+      TextInput_67: ""
     }
   }
   static navigationOptions = ({ navigation }) => {
@@ -69,13 +72,47 @@ class Blank extends React.Component {
             />
           </View>
         </View>
-        <View style={styles.View_40}>
-          <View />
-          <View />
-        </View>
         <View style={styles.View_48}>
-          <View />
-          <View />
+          <View style={styles.View_49}>
+            <Image
+              source={{
+                uri:
+                  "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/83d94e13-a6d9-454c-b946-c97169408e05.png"
+              }}
+              style={styles.Image_52}
+            />
+          </View>
+          <View style={styles.View_50}>
+            <TextInput
+              placeholder="-- DH"
+              style={styles.TextInput_64}
+              value={this.state.TextInput_64}
+              onChangeText={nextValue =>
+                this.setState({ TextInput_64: nextValue })
+              }
+            />
+          </View>
+        </View>
+        <View style={styles.View_57}>
+          <View style={styles.View_58}>
+            <Image
+              source={{
+                uri:
+                  "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/0de59158-895e-4421-b931-8c6181e65b50.png"
+              }}
+              style={styles.Image_61}
+            />
+          </View>
+          <View style={styles.View_59}>
+            <TextInput
+              placeholder="--DH"
+              style={styles.TextInput_67}
+              value={this.state.TextInput_67}
+              onChangeText={nextValue =>
+                this.setState({ TextInput_67: nextValue })
+              }
+            />
+          </View>
         </View>
       </View>
     </View>
@@ -113,6 +150,7 @@ const styles = StyleSheet.create({
   View_29: { width: 126 },
   DateTimePicker_35: {
     width: "160%",
+    height: 60,
     borderColor: "#ac1b1b",
     borderWidth: 3,
     borderLeftWidth: 3,
@@ -120,17 +158,37 @@ const styles = StyleSheet.create({
     borderTopWidth: 3,
     borderBottomWidth: 3
   },
-  View_40: { flexDirection: "row" },
-  View_41: {},
-  View_42: {},
   View_48: { flexDirection: "row" },
-  View_49: {},
-  View_50: {}
+  View_49: { width: 35, height: 30 },
+  Image_52: { width: 30, height: 30 },
+  View_50: { width: 235 },
+  TextInput_64: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
+  View_57: { height: 50, flexDirection: "row" },
+  View_58: { width: 33, height: 30 },
+  Image_61: { width: 30, height: 30 },
+  View_59: { width: 250, height: 30 },
+  TextInput_67: {
+    width: "095%",
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  }
 })
+
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
