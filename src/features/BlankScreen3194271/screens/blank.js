@@ -95,6 +95,7 @@ class Blank extends React.Component {
           uri:
             "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/225dfafc-6728-458e-a659-4647cde7c520.png"
         }}
+        style={styles.Image_28}
       />
     </View>
   )
@@ -190,7 +191,15 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end"
   },
   Button_26: { height: 35, marginTop: 40 },
-  Image_28: {}
+  Image_28: {
+    width: 20,
+    height: 20,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: -33,
+    marginBottom: 2,
+    alignSelf: "flex-end"
+  }
 })
 
 const mapStateToProps = state => {
