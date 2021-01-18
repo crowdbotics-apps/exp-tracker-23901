@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     paddingRight: 6,
     paddingTop: 6,
     paddingBottom: 12,
-    backgroundColor: "#3b97e8",
+    backgroundColor: "#61b7db",
     fontFamily: "Lato-BoldItalic"
   },
   TextInput_16: {
