@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1
   },
-  Image_202: { width: 50, height: 50 }
+  Image_202: { width: 20, height: 20 }
 })
 
 const mapStateToProps = state => {
