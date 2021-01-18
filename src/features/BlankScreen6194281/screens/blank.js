@@ -26,7 +26,14 @@ class Blank extends React.Component {
       TextInput_22: "Voir mes d\xE9pense",
       DateTimePicker_35: new Date(""),
       TextInput_64: "",
-      TextInput_67: ""
+      TextInput_67: "",
+      TextInput_69: "D\xE9pense par nature",
+      TextInput_168: "Transport",
+      TextInput_187: "- - DH",
+      TextInput_170: "D\xE9placement",
+      TextInput_194: "- - DH",
+      TextInput_179: "R\xE9stauration",
+      TextInput_200: "- - DH"
     }
   }
   static navigationOptions = ({ navigation }) => {
@@ -115,6 +122,80 @@ class Blank extends React.Component {
           </View>
         </View>
       </View>
+      <TextInput
+        placeholder="Sample text input placeholder"
+        style={styles.TextInput_69}
+        value={this.state.TextInput_69}
+        onChangeText={nextValue => this.setState({ TextInput_69: nextValue })}
+      />
+      <View style={styles.View_70}>
+        <View style={styles.View_83}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_168}
+            value={this.state.TextInput_168}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_168: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_78}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_187}
+            value={this.state.TextInput_187}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_187: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_166}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_170}
+            value={this.state.TextInput_170}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_170: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_72}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_194}
+            value={this.state.TextInput_194}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_194: nextValue })
+            }
+          />
+        </View>
+      </View>
+      <View style={styles.View_85}>
+        <View style={styles.View_86}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_179}
+            value={this.state.TextInput_179}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_179: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_87}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_200}
+            value={this.state.TextInput_200}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_200: nextValue })
+            }
+          />
+        </View>
+      </View>
+      <Image
+        source={{ uri: "https://via.placeholder.com/150" }}
+        style={styles.Image_202}
+      />
     </View>
   )
 }
@@ -180,7 +261,41 @@ const styles = StyleSheet.create({
     borderRightWidth: 1,
     borderTopWidth: 1,
     borderBottomWidth: 1
-  }
+  },
+  TextInput_69: { backgroundColor: "#61b7db", fontFamily: "Lato-BoldItalic" },
+  View_70: { flexDirection: "row" },
+  View_83: { width: 100, height: 30 },
+  TextInput_168: { backgroundColor: "#db0f0f" },
+  View_78: { width: 150, height: 30 },
+  TextInput_187: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
+  View_166: { width: 100, height: 30 },
+  TextInput_170: { backgroundColor: "#b9cc28" },
+  View_72: { width: 150, height: 30 },
+  TextInput_194: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
+  View_85: { flexDirection: "row" },
+  View_86: { width: 100, height: 30 },
+  TextInput_179: { backgroundColor: "#12bfbc" },
+  View_87: { width: 150, height: 30 },
+  TextInput_200: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
+  Image_202: { width: 50, height: 50 }
 })
 
 const mapStateToProps = state => {
