@@ -97,6 +97,7 @@ class Blank extends React.Component {
         }}
         style={styles.Image_28}
       />
+      <Icon name="arrow-circle-left" style={styles.Icon_30} />
     </View>
   )
 }
@@ -199,7 +200,8 @@ const styles = StyleSheet.create({
     marginTop: -33,
     marginBottom: 2,
     alignSelf: "flex-end"
-  }
+  },
+  Icon_30: { marginTop: 70, marginBottom: 22, color: "#4bca49" }
 })
 
 const mapStateToProps = state => {
