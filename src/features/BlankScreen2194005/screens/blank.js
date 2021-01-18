@@ -44,7 +44,7 @@ class Blank extends React.Component {
       </View>
       <View style={styles.View_11}>
         <View>
-          <Text style={styles.Text_22}>Mon profile</Text>
+          <Text style={styles.Text_22}>Mon profilee</Text>
         </View>
       </View>
       <View style={styles.View_35}>
