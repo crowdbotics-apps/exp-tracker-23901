@@ -72,7 +72,6 @@ class Blank extends React.Component {
       />
       <TextInput
         placeholder="Num\xE9ro de d\xE9pense"
-        editable={true}
         keyboardType="numeric"
         style={styles.TextInput_19}
         value={this.state.TextInput_19}
@@ -102,7 +101,7 @@ const styles = StyleSheet.create({
   Image_12: { width: 50, height: 50 },
   View_10: { width: 244, height: 50 },
   TextInput_15: {
-    width: "90%",
+    width: "80%",
     height: 300,
     paddingTop: 11,
     paddingBottom: 12,
@@ -119,7 +118,6 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   TextInput_19: {
-    width: "100%",
     height: 60,
     borderColor: "#bb0707",
     borderWidth: 1,
