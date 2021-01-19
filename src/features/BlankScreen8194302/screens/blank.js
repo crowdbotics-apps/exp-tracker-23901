@@ -24,7 +24,11 @@ class Blank extends React.Component {
 
     this.state = {
       TextInput_25: "Ajouter une d\xE9pense",
-      DateTimePicker_36: new Date("")
+      DateTimePicker_36: new Date(""),
+      TextInput_41: "15:00",
+      TextInput_43: "Nature",
+      TextInput_52: "_ _ _ _ _ _ _ _ _ _ _ _ _",
+      TextInput_56: ""
     }
   }
   static navigationOptions = ({ navigation }) => {
@@ -58,6 +62,39 @@ class Blank extends React.Component {
         }
       />
       <Text style={styles.Text_38}>Heure </Text>
+      <TextInput
+        placeholder="Sample text input placeholder"
+        style={styles.TextInput_41}
+        value={this.state.TextInput_41}
+        onChangeText={nextValue => this.setState({ TextInput_41: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        style={styles.TextInput_43}
+        value={this.state.TextInput_43}
+        onChangeText={nextValue => this.setState({ TextInput_43: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        style={styles.TextInput_52}
+        value={this.state.TextInput_52}
+        onChangeText={nextValue => this.setState({ TextInput_52: nextValue })}
+      />
+      <Text style={styles.Text_54}>Prix</Text>
+      <TextInput
+        placeholder="Number DHs"
+        keyboardType="numeric"
+        style={styles.TextInput_56}
+        value={this.state.TextInput_56}
+        onChangeText={nextValue => this.setState({ TextInput_56: nextValue })}
+      />
+      <Button
+        title="Enregistrer"
+        color="#289f5b"
+        style={styles.Button_58}
+        onPress={() => alert("Pressed!")}
+      />
+      <Icon name="arrow-circle-left" style={styles.Icon_60} />
     </View>
   )
 }
@@ -120,7 +157,64 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: "#272626",
     fontFamily: "Roboto-Regular"
-  }
+  },
+  TextInput_41: {
+    width: "86%",
+    height: -14,
+    marginLeft: 22,
+    marginRight: 31,
+    marginBottom: 4,
+    paddingLeft: 116,
+    paddingRight: 54,
+    color: "#635f5f",
+    backgroundColor: "#eeeff2"
+  },
+  TextInput_43: {
+    width: "90%",
+    marginLeft: 13,
+    marginTop: 15,
+    fontSize: 15,
+    color: "#272626",
+    fontFamily: "Roboto-Regular"
+  },
+  TextInput_52: {
+    width: "86%",
+    height: -14,
+    marginLeft: 22,
+    marginRight: 31,
+    marginBottom: 4,
+    color: "#635f5f",
+    backgroundColor: "#eeeff2",
+    textAlign: "center"
+  },
+  Text_54: {
+    width: 90,
+    marginLeft: 13,
+    marginTop: 15,
+    fontSize: 15,
+    color: "#272626",
+    fontFamily: "Roboto-Regular"
+  },
+  TextInput_56: {
+    width: "86%",
+    height: -14,
+    marginLeft: 22,
+    marginRight: 31,
+    marginBottom: 4,
+    color: "#635f5f",
+    backgroundColor: "#eeeff2",
+    textAlign: "center"
+  },
+  Button_58: {
+    width: "74%",
+    height: 27,
+    marginLeft: 67,
+    marginRight: 4,
+    marginTop: 24,
+    marginBottom: 13,
+    paddingLeft: 4
+  },
+  Icon_60: { color: "#4bca49" }
 })
 
 const mapStateToProps = state => {
