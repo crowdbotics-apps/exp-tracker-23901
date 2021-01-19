@@ -21,6 +21,7 @@ import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 class Blank extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       TextInput_17: "v\xE9rifier les d\xE9penses",
       TextInput_19: ""
@@ -36,13 +37,17 @@ class Blank extends React.Component {
         <View style={styles.View_8}>
           <View style={styles.View_9}>
             <Image
-              source={{ uri: "https://via.placeholder.com/150" }}
+              source={{
+                uri:
+                  "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/5f74bafd-141b-461a-a5ba-11b553dc70e9.png"
+              }}
               style={styles.Image_13}
             />
           </View>
           <View style={styles.View_10}>
             <TextInput
               placeholder="Sample text input placeholder"
+              style={styles.TextInput_17}
               value={this.state.TextInput_17}
               onChangeText={nextValue =>
                 this.setState({ TextInput_17: nextValue })
@@ -67,13 +72,20 @@ const styles = StyleSheet.create({
   View_9: { width: 50, height: 50 },
   Image_13: { width: 50, height: 50 },
   View_10: { width: 250, height: 50 },
-  TextInput_17: {},
+  TextInput_17: {
+    backgroundColor: "#7696d0",
+    fontFamily: "Lato-Bold",
+    textAlign: "center"
+  },
   TextInput_19: {}
 })
+
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
