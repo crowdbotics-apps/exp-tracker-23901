@@ -24,8 +24,7 @@ class Blank extends React.Component {
 
     this.state = {
       TextInput_17: "v\xE9rifier les d\xE9penses",
-      TextInput_21: "",
-      TextInput_19: ""
+      TextInput_21: ""
     }
   }
   static navigationOptions = ({ navigation }) => {
@@ -67,11 +66,22 @@ class Blank extends React.Component {
         color="#bb0707"
         onPress={() => alert("Pressed!")}
       />
-      <TextInput
-        placeholder=""
-        value={this.state.TextInput_19}
-        onChangeText={nextValue => this.setState({ TextInput_19: nextValue })}
-      />
+      <View style={styles.View_34}>
+        <View style={styles.View_35} />
+        <View style={styles.View_36} />
+      </View>
+      <View style={styles.View_37}>
+        <View style={styles.View_38} />
+        <View style={styles.View_39} />
+      </View>
+      <View style={styles.View_40}>
+        <View style={styles.View_41} />
+        <View style={styles.View_42} />
+      </View>
+      <View style={styles.View_43}>
+        <View style={styles.View_44} />
+        <View style={styles.View_45} />
+      </View>
     </View>
   )
 }
@@ -90,7 +100,18 @@ const styles = StyleSheet.create({
   },
   TextInput_21: {},
   Button_33: {},
-  TextInput_19: {}
+  View_34: { flexDirection: "row" },
+  View_35: { width: 150 },
+  View_36: { width: 150 },
+  View_37: { flexDirection: "row" },
+  View_38: { width: 150 },
+  View_39: { width: 150 },
+  View_40: { flexDirection: "row" },
+  View_41: { width: 150 },
+  View_42: { width: 150 },
+  View_43: { flexDirection: "row" },
+  View_44: { width: 150 },
+  View_45: { width: 150 }
 })
 
 const mapStateToProps = state => {
