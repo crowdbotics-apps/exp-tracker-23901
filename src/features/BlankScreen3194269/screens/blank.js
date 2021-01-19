@@ -98,6 +98,7 @@ class Blank extends React.Component {
           color="#0f91d2"
           onPress={() => alert("Pressed!")}
         />
+        <Icon name="arrow-left" style={styles.Icon_46} />
       </View>
     </View>
   )
@@ -107,12 +108,12 @@ const styles = StyleSheet.create({
   View_1: {},
   View_3: {
     width: 300,
-    height: 300,
+    height: 350,
     borderColor: "#e82121",
     borderStyle: "dashed"
   },
   View_8: { flexDirection: "row" },
-  View_9: { width: 270, height: 50 },
+  View_9: { width: 300, height: 50 },
   Image_12: { width: 50, height: 50 },
   TextInput_14: {
     width: "50%",
@@ -141,7 +142,8 @@ const styles = StyleSheet.create({
   TextInput_24: {},
   TextInput_27: {},
   TextInput_29: {},
-  Button_44: {}
+  Button_44: {},
+  Icon_46: { color: "#4bca49" }
 })
 
 const mapStateToProps = state => {
