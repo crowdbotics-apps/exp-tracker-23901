@@ -192,9 +192,10 @@ class Blank extends React.Component {
           />
         </View>
       </View>
-      <Image
-        source={{ uri: "https://via.placeholder.com/150" }}
-        style={styles.Image_202}
+      <Icon
+        iconFont="FontAwesome Icons"
+        name="arrow-circle-left"
+        style={styles.Icon_202}
       />
     </View>
   )
@@ -295,7 +296,25 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1
   },
-  Image_202: { width: 20, height: 20 }
+  Icon_202: {
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    fontSize: 20,
+    color: "#4bca49",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  }
 })
 
 const mapStateToProps = state => {
