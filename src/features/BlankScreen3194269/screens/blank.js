@@ -98,8 +98,6 @@ class Blank extends React.Component {
           color="#0f91d2"
           onPress={() => alert("Pressed!")}
         />
-        <Slider value={50} minimumValue={0} maximumValue={100} />
-        <Button title="Press me!" onPress={() => alert("Pressed!")} />
       </View>
     </View>
   )
@@ -143,9 +141,7 @@ const styles = StyleSheet.create({
   TextInput_24: {},
   TextInput_27: {},
   TextInput_29: {},
-  Button_44: {},
-  Slider_32: {},
-  Button_36: {}
+  Button_44: {}
 })
 
 const mapStateToProps = state => {
