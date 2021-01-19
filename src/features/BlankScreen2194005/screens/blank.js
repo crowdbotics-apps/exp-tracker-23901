@@ -99,7 +99,7 @@ class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   View_4: { flexDirection: "row" },
-  View_5: { width: 260, height: 50 },
+  View_5: { width: 300, height: 50 },
   Image_16: { width: 50, height: 50 },
   Text_20: {
     fontSize: 15,
