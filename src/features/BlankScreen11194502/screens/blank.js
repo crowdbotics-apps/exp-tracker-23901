@@ -24,7 +24,15 @@ class Blank extends React.Component {
 
     this.state = {
       TextInput_17: "v\xE9rifier les d\xE9penses",
-      TextInput_21: ""
+      TextInput_21: "",
+      TextInput_52: "User",
+      TextInput_70: "",
+      TextInput_54: "Date",
+      DateTimePicker_89: new Date(""),
+      TextInput_58: "Nature",
+      TextInput_78: "",
+      TextInput_64: "Prix",
+      TextInput_85: ""
     }
   }
   static navigationOptions = ({ navigation }) => {
@@ -67,20 +75,92 @@ class Blank extends React.Component {
         onPress={() => alert("Pressed!")}
       />
       <View style={styles.View_34}>
-        <View style={styles.View_35} />
-        <View style={styles.View_36} />
+        <View style={styles.View_35}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_52}
+            value={this.state.TextInput_52}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_52: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_36}>
+          <TextInput
+            placeholder="User"
+            style={styles.TextInput_70}
+            value={this.state.TextInput_70}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_70: nextValue })
+            }
+          />
+        </View>
       </View>
       <View style={styles.View_37}>
-        <View style={styles.View_38} />
-        <View style={styles.View_39} />
+        <View style={styles.View_38}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_54}
+            value={this.state.TextInput_54}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_54: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_39}>
+          <DateTimePicker
+            showIcon={false}
+            style={styles.DateTimePicker_89}
+            date={this.state.DateTimePicker_89}
+            onDateChange={selectedDate =>
+              this.setState({ DateTimePicker_89: selectedDate })
+            }
+          />
+        </View>
       </View>
       <View style={styles.View_40}>
-        <View style={styles.View_41} />
-        <View style={styles.View_42} />
+        <View style={styles.View_41}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_58}
+            value={this.state.TextInput_58}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_58: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_42}>
+          <TextInput
+            placeholder="Nature"
+            style={styles.TextInput_78}
+            value={this.state.TextInput_78}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_78: nextValue })
+            }
+          />
+        </View>
       </View>
       <View style={styles.View_43}>
-        <View style={styles.View_44} />
-        <View style={styles.View_45} />
+        <View style={styles.View_44}>
+          <TextInput
+            placeholder="Sample text input placeholder"
+            style={styles.TextInput_64}
+            value={this.state.TextInput_64}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_64: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_45}>
+          <TextInput
+            placeholder="Prix"
+            style={styles.TextInput_85}
+            value={this.state.TextInput_85}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_85: nextValue })
+            }
+          />
+        </View>
       </View>
     </View>
   )
@@ -101,17 +181,49 @@ const styles = StyleSheet.create({
   TextInput_21: {},
   Button_33: {},
   View_34: { flexDirection: "row" },
-  View_35: { width: 150 },
-  View_36: { width: 150 },
+  View_35: { width: 102 },
+  TextInput_52: { width: "50%", backgroundColor: "#e5a4a4" },
+  View_36: { width: 197 },
+  TextInput_70: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
   View_37: { flexDirection: "row" },
-  View_38: { width: 150 },
-  View_39: { width: 150 },
+  View_38: { width: 101 },
+  TextInput_54: { width: 50, backgroundColor: "#e5a4a4" },
+  View_39: { width: 198 },
+  DateTimePicker_89: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
   View_40: { flexDirection: "row" },
-  View_41: { width: 150 },
-  View_42: { width: 150 },
+  View_41: { width: 101 },
+  TextInput_58: { width: "50%", backgroundColor: "#e5a4a4" },
+  View_42: { width: 198 },
+  TextInput_78: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  },
   View_43: { flexDirection: "row" },
-  View_44: { width: 150 },
-  View_45: { width: 150 }
+  View_44: { width: 102 },
+  TextInput_64: { width: "50%", backgroundColor: "#e5a4a4" },
+  View_45: { width: 198 },
+  TextInput_85: {
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1
+  }
 })
 
 const mapStateToProps = state => {
