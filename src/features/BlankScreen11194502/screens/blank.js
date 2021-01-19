@@ -24,6 +24,7 @@ class Blank extends React.Component {
 
     this.state = {
       TextInput_17: "v\xE9rifier les d\xE9penses",
+      TextInput_21: "",
       TextInput_19: ""
     }
   }
@@ -58,6 +59,16 @@ class Blank extends React.Component {
       </View>
       <TextInput
         placeholder=""
+        value={this.state.TextInput_21}
+        onChangeText={nextValue => this.setState({ TextInput_21: nextValue })}
+      />
+      <Button
+        title="v\xE9rifier les d\xE9penses"
+        color="#bb0707"
+        onPress={() => alert("Pressed!")}
+      />
+      <TextInput
+        placeholder=""
         value={this.state.TextInput_19}
         onChangeText={nextValue => this.setState({ TextInput_19: nextValue })}
       />
@@ -77,6 +88,8 @@ const styles = StyleSheet.create({
     fontFamily: "Lato-Bold",
     textAlign: "center"
   },
+  TextInput_21: {},
+  Button_33: {},
   TextInput_19: {}
 })
 
