@@ -162,6 +162,31 @@ class Blank extends React.Component {
           />
         </View>
       </View>
+      <View style={styles.View_90}>
+        <View style={styles.View_91}>
+          <Icon name="angle-left" />
+        </View>
+        <View style={styles.View_92}>
+          <Icon name="angle-right" />
+        </View>
+      </View>
+      <View style={styles.View_288}>
+        <View style={styles.View_289}>
+          <Button
+            title="Valider"
+            style={styles.Button_298}
+            onPress={() => alert("Pressed!")}
+          />
+        </View>
+        <View style={styles.View_290}>
+          <Button
+            title="Rejeter"
+            style={styles.Button_302}
+            onPress={() => alert("Pressed!")}
+          />
+        </View>
+      </View>
+      <Icon name="arrow-alt-circle-left" style={styles.Icon_304} />
     </View>
   )
 }
@@ -223,7 +248,18 @@ const styles = StyleSheet.create({
     borderRightWidth: 1,
     borderTopWidth: 1,
     borderBottomWidth: 1
-  }
+  },
+  View_90: { flexDirection: "row" },
+  View_91: { width: 264 },
+  Icon_292: {},
+  View_92: { width: 37 },
+  Icon_295: {},
+  View_288: { flexDirection: "row" },
+  View_289: { width: 139 },
+  Button_298: { height: 20 },
+  View_290: { width: 112 },
+  Button_302: { width: "120%", height: 20 },
+  Icon_304: { color: "#1c9513" }
 })
 
 const mapStateToProps = state => {
