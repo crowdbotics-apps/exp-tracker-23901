@@ -53,19 +53,11 @@ class Blank extends React.Component {
       />
       <Button
         title="Enregistrer"
-        color="#24c819"
+        color="#b80a0a"
         style={styles.Button_11}
         onPress={() => alert("Pressed!")}
       />
-      <TouchableOpacity
-        onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
-      >
-        <Icon
-          iconFont="FontAwesome Icons"
-          name="arrow-left"
-          style={styles.Icon_13}
-        />
-      </TouchableOpacity>
+      <Icon name="arrow-left" style={styles.Icon_13} />
     </View>
   )
 }
@@ -83,21 +75,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2
   },
   Button_11: { width: "75%", marginLeft: 65, marginTop: 39 },
-  Icon_13: {
-    marginLeft: 0,
-    marginTop: 5,
-    borderColor: "#000000",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
-    borderRadius: 0,
-    fontSize: 20,
-    color: "#2bfd39",
-    fontWeight: "normal",
-    textAlign: "left"
-  }
+  Icon_13: { color: "#4bca49" }
 })
 
 const mapStateToProps = state => {
