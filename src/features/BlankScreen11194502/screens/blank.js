@@ -178,7 +178,13 @@ class Blank extends React.Component {
             onPress={() => alert("Pressed!")}
           />
         </View>
-        <View style={styles.View_290} />
+        <View style={styles.View_290}>
+          <Button
+            title="Press me!"
+            style={styles.Button_309}
+            onPress={() => alert("Pressed!")}
+          />
+        </View>
       </View>
       <TouchableOpacity
         onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
@@ -256,6 +262,7 @@ const styles = StyleSheet.create({
   View_289: { width: 141 },
   Button_298: { height: 20 },
   View_290: { width: 110 },
+  Button_309: { width: "120%", height: 20 },
   Icon_306: { color: "#3bd862" }
 })
 
