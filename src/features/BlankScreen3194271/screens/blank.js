@@ -47,57 +47,33 @@ class Blank extends React.Component {
       />
       <Button
         title="Ajouter une demande"
-        color="#eeeff2"
-        style={styles.Button_14}
-        onPress={() => alert("Pressed!")}
-      />
-      <Image
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/4de07036-a745-4710-9cc4-5f6a5f2d5bdd.png"
-        }}
-        style={styles.Image_16}
-      />
-      <Button
-        title="Chercher une demande"
-        color="#eeeff2"
-        style={styles.Button_18}
-        onPress={() => alert("Pressed!")}
-      />
-      <Image
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/509f2536-2517-4e95-9c6d-5cc81dda3bc7.png"
-        }}
-        style={styles.Image_20}
+        color="#a2b4ec"
+        style={styles.Button_102}
+        onPress={() => this.props.navigation.navigate("BlankScreen8194302")}
       />
       <Button
         title="Modifier une demande"
-        color="#eeeff2"
-        style={styles.Button_22}
+        color="#a2b4ec"
+        style={styles.Button_120}
         onPress={() => alert("Pressed!")}
       />
-      <Image
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/0e16671e-f993-43db-b889-6f4de827998f.png"
-        }}
-        style={styles.Image_24}
+      <Button
+        title="Chercher une demande"
+        color="#a2b4ec"
+        style={styles.Button_79}
+        onPress={() => this.props.navigation.navigate("BlankScreen6194281")}
       />
       <Button
         title="Supprimer une demande"
-        color="#eeeff2"
-        style={styles.Button_26}
-        onPress={() => alert("Pressed!")}
+        color="#a2b4ec"
+        style={styles.Button_115}
+        onPress={() => this.props.navigation.navigate("BlankScreen5194280")}
       />
-      <Image
-        source={{
-          uri:
-            "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/225dfafc-6728-458e-a659-4647cde7c520.png"
-        }}
-        style={styles.Image_28}
-      />
-      <Icon name="arrow-circle-left" style={styles.Icon_30} />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
+      >
+        <Icon name="arrow-left" style={styles.Icon_200} />
+      </TouchableOpacity>
     </View>
   )
 }
@@ -135,73 +111,11 @@ const styles = StyleSheet.create({
     paddingBottom: 1,
     alignSelf: "flex-start"
   },
-  Button_14: {
-    height: 35,
-    marginTop: 46,
-    alignSelf: "center",
-    fontSize: 15,
-    color: "#131111",
-    fontFamily: "Roboto-Regular",
-    lineHeight: 13
-  },
-  Image_16: {
-    width: 20,
-    height: 20,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: -33,
-    marginBottom: 2,
-    paddingLeft: -1,
-    paddingRight: -1,
-    paddingBottom: -1,
-    alignSelf: "flex-end"
-  },
-  Button_18: {
-    height: 35,
-    marginTop: 40,
-    marginBottom: 4,
-    alignSelf: "center",
-    fontSize: 15,
-    color: "#131111",
-    fontFamily: "Roboto-Regular"
-  },
-  Image_20: {
-    width: 20,
-    height: 20,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: -33,
-    marginBottom: 2,
-    alignSelf: "flex-end"
-  },
-  Button_22: {
-    height: 35,
-    marginTop: 40,
-    alignSelf: "center",
-    fontSize: 15,
-    color: "#131111",
-    fontFamily: "Roboto-Regular"
-  },
-  Image_24: {
-    width: 20,
-    height: 20,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: -33,
-    marginBottom: 2,
-    alignSelf: "flex-end"
-  },
-  Button_26: { height: 35, marginTop: 40 },
-  Image_28: {
-    width: 20,
-    height: 20,
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: -33,
-    marginBottom: 2,
-    alignSelf: "flex-end"
-  },
-  Icon_30: { marginTop: 70, marginBottom: 22, color: "#4bca49" }
+  Button_102: { height: 30 },
+  Button_120: { height: 30 },
+  Button_79: { height: 30 },
+  Button_115: { height: 30 },
+  Icon_200: { color: "#4bdd55" }
 })
 
 const mapStateToProps = state => {
