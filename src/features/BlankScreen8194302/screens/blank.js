@@ -94,8 +94,11 @@ class Blank extends React.Component {
         style={styles.Button_58}
         onPress={() => alert("Pressed!")}
       />
-      <Icon name="arrow-circle-left" style={styles.Icon_60} />
-      <Icon name="star" />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
+      >
+        <Icon name="arrow-left" style={styles.Icon_62} />
+      </TouchableOpacity>
     </View>
   )
 }
@@ -215,8 +218,7 @@ const styles = StyleSheet.create({
     marginBottom: 13,
     paddingLeft: 4
   },
-  Icon_60: { color: "#4bca49" },
-  Icon_62: {}
+  Icon_62: { color: "#3de16e" }
 })
 
 const mapStateToProps = state => {
