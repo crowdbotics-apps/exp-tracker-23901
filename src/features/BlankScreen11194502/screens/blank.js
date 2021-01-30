@@ -178,15 +178,13 @@ class Blank extends React.Component {
             onPress={() => alert("Pressed!")}
           />
         </View>
-        <View style={styles.View_290}>
-          <Button
-            title="Rejeter"
-            style={styles.Button_302}
-            onPress={() => alert("Pressed!")}
-          />
-        </View>
+        <View style={styles.View_290} />
       </View>
-      <Icon name="arrow-alt-circle-left" style={styles.Icon_304} />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
+      >
+        <Icon name="arrow-left" style={styles.Icon_306} />
+      </TouchableOpacity>
     </View>
   )
 }
@@ -255,11 +253,10 @@ const styles = StyleSheet.create({
   View_92: { width: 37 },
   Icon_295: {},
   View_288: { flexDirection: "row" },
-  View_289: { width: 139 },
+  View_289: { width: 141 },
   Button_298: { height: 20 },
-  View_290: { width: 112 },
-  Button_302: { width: "120%", height: 20 },
-  Icon_304: { color: "#1c9513" }
+  View_290: { width: 110 },
+  Icon_306: { color: "#3bd862" }
 })
 
 const mapStateToProps = state => {
