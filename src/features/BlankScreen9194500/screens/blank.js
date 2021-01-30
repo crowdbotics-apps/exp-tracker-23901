@@ -21,6 +21,7 @@ import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 class Blank extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = { TextInput_9: "" }
   }
   static navigationOptions = ({ navigation }) => {
@@ -38,7 +39,6 @@ class Blank extends React.Component {
       />
       <Text style={styles.Text_5}>Placer votre facture ici</Text>
       <Image
-        resizeMode="cover"
         source={{
           uri:
             "https://d3tklmlrp1a8c2.cloudfront.net/media/resources/project/23901/1dd7b989-26b7-4f70-aa32-e3a2cd269d70.PNG"
@@ -57,12 +57,15 @@ class Blank extends React.Component {
         style={styles.Button_11}
         onPress={() => alert("Pressed!")}
       />
-      <Button
-        title="&lt;&lt;"
-        color="#eeefec"
-        style={styles.Button_13}
-        onPress={() => alert("Pressed!")}
-      />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
+      >
+        <Icon
+          iconFont="FontAwesome Icons"
+          name="arrow-left"
+          style={styles.Icon_13}
+        />
+      </TouchableOpacity>
     </View>
   )
 }
@@ -71,17 +74,7 @@ const styles = StyleSheet.create({
   View_1: {},
   Image_3: { width: 237, height: 55, marginTop: 28, alignSelf: "center" },
   Text_5: { marginLeft: 20, marginTop: 31, fontFamily: "Merriweather-Bold" },
-  Image_7: {
-    width: 200,
-    height: 200,
-    marginLeft: 56,
-    marginTop: 0,
-    marginBottom: 0,
-    paddingLeft: 0,
-    paddingRight: 0,
-    paddingTop: 0,
-    paddingBottom: 0
-  },
+  Image_7: { marginLeft: 56 },
   TextInput_9: {
     width: "77%",
     marginLeft: 31,
@@ -90,27 +83,29 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2
   },
   Button_11: { width: "75%", marginLeft: 65, marginTop: 39 },
-  Button_13: {
-    width: "42%",
-    height: 40,
-    marginLeft: 23,
-    marginTop: 23,
-    fontSize: 38,
-    color: "#f2b83a",
-    fontWeight: "bold",
-    borderColor: "#e3a41c",
-    borderWidth: 2,
-    borderLeftWidth: 2,
-    borderRightWidth: 2,
-    borderTopWidth: 2,
-    borderBottomWidth: 2,
-    borderRadius: 7
+  Icon_13: {
+    marginLeft: 0,
+    marginTop: 5,
+    borderColor: "#000000",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    fontSize: 20,
+    color: "#2bfd39",
+    fontWeight: "normal",
+    textAlign: "left"
   }
 })
+
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
