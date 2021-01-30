@@ -95,6 +95,7 @@ class Blank extends React.Component {
         onPress={() => alert("Pressed!")}
       />
       <Icon name="arrow-circle-left" style={styles.Icon_60} />
+      <Icon name="star" />
     </View>
   )
 }
@@ -214,7 +215,8 @@ const styles = StyleSheet.create({
     marginBottom: 13,
     paddingLeft: 4
   },
-  Icon_60: { color: "#4bca49" }
+  Icon_60: { color: "#4bca49" },
+  Icon_62: {}
 })
 
 const mapStateToProps = state => {
