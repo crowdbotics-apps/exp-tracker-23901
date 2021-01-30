@@ -180,9 +180,9 @@ class Blank extends React.Component {
         </View>
         <View style={styles.View_290}>
           <Button
-            title="Press me!"
+            title="Rejeter"
             style={styles.Button_309}
-            onPress={() => alert("Pressed!")}
+            onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
           />
         </View>
       </View>
