@@ -192,11 +192,11 @@ class Blank extends React.Component {
           />
         </View>
       </View>
-      <Icon
-        iconFont="FontAwesome Icons"
-        name="arrow-circle-left"
-        style={styles.Icon_202}
-      />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen2194005")}
+      >
+        <Icon name="arrow-left" style={styles.Icon_204} />
+      </TouchableOpacity>
     </View>
   )
 }
@@ -296,25 +296,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1
   },
-  Icon_202: {
-    marginTop: 5,
-    marginBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    paddingTop: 5,
-    paddingBottom: 5,
-    fontSize: 20,
-    color: "#4bca49",
-    backgroundColor: "#ffffff",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    textAlign: "left",
-    textAlignVertical: "center",
-    textDecorationLine: "none",
-    textTransform: "none",
-    lineHeight: 12,
-    letterSpacing: 0
-  }
+  Icon_204: { color: "#4bca49" }
 })
 
 const mapStateToProps = state => {
